@@ -6,7 +6,7 @@ const cors = require ('cors');
 app.use(cors())
 app.use(express.json())  //allow send data from frontend to backend
 
-const server = app.listen('3001', ()=> console.log('Server running!!!'));
+const server = app.listen('3001', ()=> console.log('Server running on port 3001!!!'));
 
 io = socket(server)
 io.on('connection', (socket)=>{
