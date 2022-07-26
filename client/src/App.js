@@ -8,9 +8,12 @@ let socket;
 const CONNECTION_PORT= 'localhost:3002/' //link for the backend
 
 function App() {
+  //Before login
   const [loggedIn, setLoggedIn]= useState(true) //checking if your logged in or not
-  const [room, setRoom]=useState('')
   const [userName, setUserName]=useState('')
+
+  // after log in 
+  const [room, setRoom]=useState('Class  of Olly')
 
   useEffect(()=>{
     socket = io(CONNECTION_PORT)
