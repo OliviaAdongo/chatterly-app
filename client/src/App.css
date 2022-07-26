@@ -6,12 +6,12 @@ body{
   display: grid;
   place-items: center;
   height: 100vh;
-  background-color: #2a2730;
+  background-color: #413f45;
 }
 .logIn{
   width: 600px;
   height: 350px;
-  border: 5px solid lightblue;
+  border: 2px solid lightblue;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -29,4 +29,16 @@ body{
 }
 .logIn input:focus{
   outline: none;
+}
+.logIn button{
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: lightskyblue;
+  color: white;
+  font-size: 15px;
+}
+.logIn button:hover{
+  cursor: pointer;
+  background-color: blue;
 }

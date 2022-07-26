@@ -22,7 +22,7 @@ const connectToRoom= ()=>{
 
   return (
     <div className="App">
-    <h1>Chatterly</h1>
+    <h1 style={{fontFamily: "monospace", fontColor:'white'}}>Chatterly</h1>
     {!loggedIn ? (
       // {* render page that will be displayed if not logged in and that is the input */}
      <div className="logIn">
