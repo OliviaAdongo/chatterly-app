@@ -4,7 +4,7 @@ import io from  'socket.io-client';
 
 
 let socket;
-const CONNECTION_PORT= 'localhost:3001/' //link for the backend
+const CONNECTION_PORT= 'localhost:3002/' //link for the backend
 
 function App() {
   const [loggedIn, setLoggedIn]= useState(false) //checking if your logged in or not
@@ -15,14 +15,14 @@ function App() {
     socket = io(CONNECTION_PORT)
   }, [CONNECTION_PORT]);
 
-const connectToRoom= ()=>{
-  setLoggedIn=(true)
+const connectToRoom = ()=>{
   socket.emit('join_room', room)
 } 
+// sends data to the backend
 
   return (
     <div className="App">
-    <h1 style={{fontFamily: "monospace", fontColor:'white'}}>Chatterly</h1>
+    <h1 style={{fontFamily: "monospace"}}>Chatterly</h1>
     {!loggedIn ? (
       // {* render page that will be displayed if not logged in and that is the input */}
      <div className="logIn">
