@@ -9,27 +9,28 @@ const CONNECTION_PORT= 'localhost:3002/' //link for the backend
 
 function App() {
   //Before login
-  const [loggedIn, setLoggedIn]= useState(true) //checking if your logged in or not
+  const [loggedIn, setLoggedIn]= useState(false) //checking if your logged in or not
+  const [room, setRoom]=useState('Class  of pi')
   const [userName, setUserName]=useState('')
 
-  // after log in 
-  const [room, setRoom]=useState('Class  of Olly')
+
 
   useEffect(()=>{
     socket = io(CONNECTION_PORT)
   }, [CONNECTION_PORT]);
 
 const connectToRoom = ()=>{
-  // setLoggedIn = (true); // this is the one that makes the code err
-  socket.emit('join_room', room)
-} 
-// sends data to the backend
+  setLoggedIn(true); // this is the one that makes the code err
+  socket.emit('join_room', room);
+};
+
+// sends data to the backend. below here {* render page that will be displayed if not logged in and that is the input */}
 
   return (
     <div className="App">
     <h1 style={{fontFamily: "monospace"}}>Chatterly</h1>
     {!loggedIn ? (
-      // {* render page that will be displayed if not logged in and that is the input */}
+       
      <div className="logIn">
         <div className="input">
           <input type="text" placeholder="Name..." 
