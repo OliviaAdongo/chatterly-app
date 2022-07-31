@@ -5,7 +5,7 @@ body{
 .chatContainer{
   width: 600px;
   height: 350px;
-  border: 2px solid lightblue;
+  border: 2px solid rgb(189, 203, 208);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -60,10 +60,17 @@ body{
     font-weight: 300;
     font-size: 17px;
 }
-
+.send{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(40, 134, 192);
+    color: white;
+    font-size: 15px;
+  }
 #You{
     justify-content: flex-start;
-}
+}xs
 #Other{
     justify-content: flex-end;
 }

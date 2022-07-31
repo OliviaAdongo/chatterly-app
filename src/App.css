@@ -6,12 +6,13 @@ body{
   display: grid;
   place-items: center;
   height: 100vh;
-  background-color: #413f45;
+  color: white;
+  background-color: rgb(79, 104, 79);
 }
 .logIn{
   width: 600px;
   height: 350px;
-  border: 2px solid lightblue;
+  border: 2px solid rgb(218, 226, 229);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -21,7 +22,7 @@ body{
   margin: 10px;
   width: 200px;
   height: 40px;
-  border: 2px solid lightblue;
+  border: 2px solid rgb(190, 207, 212);
   background-color: transparent;
   padding-left: 10px;
   color: white;
@@ -34,7 +35,7 @@ body{
   width: 100px;
   height: 50px;
   border: none;
-  background-color: lightskyblue;
+  background-color: rgb(28, 97, 139);
   color: white;
   font-size: 15px;
 }

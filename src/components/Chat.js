@@ -53,7 +53,7 @@ function Chat(){
 
         <div className="messageInputs">
             <input type="text" placeholder="Message..." onChange={(e)=> {setMessage(e.target.value)}}/>
-            <button onClick={sendMessage}>Send</button>
+            <button className="send" onClick={sendMessage}>Send</button>
         </div>
 
         </div>
