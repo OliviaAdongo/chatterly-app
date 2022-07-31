@@ -15,3 +15,6 @@ Chatterly app is an app that is intended to be used for messaging. A used can jo
 
 ## Live link
 https://livia-chat.herokuapp.com/
+
+## Link to server
+On GitHub : https://github.com/OliviaAdongo/chatterly-server
