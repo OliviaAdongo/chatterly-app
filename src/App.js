@@ -4,6 +4,7 @@ import io from  'socket.io-client';
 import Chat from './components/Chat';
 
 
+
 let socket;
 const CONNECTION_PORT= 'localhost:3002/' //link for the backend
 
@@ -47,6 +48,7 @@ const connectToRoom = ()=>{
       </div>
     )}
     </div>
+    
   );
 }
 
