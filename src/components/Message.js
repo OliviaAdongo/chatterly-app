@@ -1,13 +1,10 @@
 import React from "react";
 function Message(){
-    <form className="form">
-        <input
-            className="input"
-            type="text"
-            placeholder="Type a message..."
-         />
-        <button>Send</button>
-        </form>
+return(
+    <div  className="containerPic">
+    <button>Random</button>
 
+    </div>
+)
 }
 export default Message;

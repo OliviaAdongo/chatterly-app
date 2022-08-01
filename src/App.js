@@ -40,13 +40,12 @@ const connectToRoom = ()=>{
     <div className="App">
     <h1 style={{fontFamily: "monospace"}}>Chatterly</h1>
     {!loggedIn ? (
-       
-     <div className="logIn">
+       <div className="logIn">
         <div className="input">
           <input type="text" placeholder="Name..." 
-          onChange={(e)=> {setUserName(e.target.value)}}/>
+          onChange={(e)=> {setUserName(e.target.value)}} style={{background: "white"}}/>
           <input type="room" placeholder="Room..." 
-          onChange={(e)=> {setRoom(e.target.value)}}/>
+          onChange={(e)=> {setRoom(e.target.value)}}style={{background: "white"}}/>
         </div>
         <button onClick={connectToRoom}>Enter</button>
      </div>

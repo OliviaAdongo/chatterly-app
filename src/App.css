@@ -7,11 +7,15 @@ body{
   place-items: center;
   height: 100vh;
   color: white;
-  background-color: rgb(79, 104, 79);
+  background-color: #043a04;
+}
+.App  h1{
+  margin-bottom: -100px;
 }
 .logIn{
   width: 600px;
-  height: 350px;
+  height: 450px;
+  font-family: monospace;
   border: 2px solid rgb(218, 226, 229);
   border-radius: 10px;
   display: flex;
@@ -25,7 +29,7 @@ body{
   border: 2px solid rgb(190, 207, 212);
   background-color: transparent;
   padding-left: 10px;
-  color: white;
+  color: black;
   font-size: 15px;
 }
 .logIn input:focus{
@@ -33,13 +37,16 @@ body{
 }
 .logIn button{
   width: 100px;
+  font-family: monospace;
   height: 50px;
+  border-radius: 10px;
   border: none;
-  background-color: rgb(28, 97, 139);
+  background-color: #CD853F;
   color: white;
   font-size: 15px;
 }
 .logIn button:hover{
+  font-family: monospace;
   cursor: pointer;
   background-color: blue;
 }

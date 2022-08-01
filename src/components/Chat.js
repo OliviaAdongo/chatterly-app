@@ -34,7 +34,7 @@ function Chat(){
             },
         };
 
-
+ 
         socket.emit("send_message", messageContent);
         setMessageList([...messageList, messageContent.content]);
         setMessage("");

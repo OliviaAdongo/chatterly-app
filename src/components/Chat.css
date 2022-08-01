@@ -5,13 +5,16 @@ body{
 .chatContainer{
   width: 600px;
   height: 350px;
+  height: 500px;
+  background: white;
+  color: black;
   border: 2px solid rgb(189, 203, 208);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   place-items: center;
   flex-direction: column;
-}
+} 
 .chatContainer .messages{
     flex: 80%;
     width: 100%;
@@ -24,18 +27,25 @@ body{
     flex-direction: row;
 }
 .chatContainer .messageInputs input{
-    flex: 80%;
-    height:  calc(100% -5px);
+    flex: 50%;
+    margin-top: 44px;
+    margin-bottom: 0px;
     border: none;
-    border-top: 5px  solid lightblue;
+    border-top: 1px  solid  grey;
     font-size: 20px;
 }
 .chatContainer .messageInputs button{
-    flex: 20%;
-    height: 100%;
-    background-color: rgb(120, 120, 214);
+    width: 100px;
+    font-family: monospace;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 44px;
+    right: 420px;
+    background-color: #CD853F;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
 }
 .messageIndividual{
     width: 300px;
@@ -55,8 +65,9 @@ body{
     width: calc(100% - 30px);
 }
 .messageContainer h2{
+    background-color: blue;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-weight: 300;
     font-size: 17px;
 }
