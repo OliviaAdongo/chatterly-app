@@ -6,6 +6,7 @@ let socket;
 const CONNECTION_PORT= 'localhost:3002/'
 
 function Chat(){
+    
     //Before login
     const [room, setRoom]=useState('2022')
     const [userName, setUserName]=useState('User')
@@ -55,8 +56,9 @@ function Chat(){
             <input type="text" placeholder="Message..." onChange={(e)=> {setMessage(e.target.value)}}/>
             <button className="send" onClick={sendMessage}>Send</button>
         </div>
-
+        
         </div>
+        
     ) 
 }
 export default Chat;  

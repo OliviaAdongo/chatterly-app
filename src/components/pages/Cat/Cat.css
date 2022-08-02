@@ -1,0 +1,7 @@
+.cat{
+display: grid;
+height: 100vh;
+font-Family: monospace;
+color: white;
+background-color: #043a04;
+}

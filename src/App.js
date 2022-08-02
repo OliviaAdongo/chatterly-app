@@ -36,6 +36,7 @@ const connectToRoom = ()=>{
         <li><a><Link to='/about'> Fun </Link></a></li>
         <li><a><Link to='/admin'> Admin</Link></a></li>
         <li><a><Link to='/cat' > Gif</Link></a></li>
+  
    
       </nav>
     </div>

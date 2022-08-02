@@ -13,8 +13,8 @@ function About() {
     <u >Fun:</u> 
     <h3>Welcome to Chatterly App. A chat app that allows you to chat with your friends. 
      <h3>To proceed, please go to the SignIn page and enter your username and the room you would like to join.<button onClick={()=>{ navigate('/')}}>Back</button></h3>
-      <h3>If you  would like to see cute cat gifs  pleace proceed to Gifs. </h3>
-      <h3>You can chck out fun facts of cats below:</h3>
+      <h3>If you  would like to see cute cat gifs  pleace proceed to Gifs. <button onClick={()=>{ navigate('/cat')}}>Gifs</button> </h3>
+      <h3>You can check out fun facts of cats below:</h3>
       <h3><li>Cats can jump up to 6 times their height.</li></h3>
       <h3><li>They have a total of 18 toes.</li></h3>
       <h3><li>Cats sleep for around 13 to 16 hours a day. </li></h3>
