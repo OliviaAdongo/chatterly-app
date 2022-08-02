@@ -1,11 +1,7 @@
 import  React, { useEffect, useState } from "react";
 import './App.css';
-import {BrowserRouter  as Router, Route, Routes} from 'react-router-dom';
 import io from  'socket.io-client';
-import Chat from './components/Chat';
-import Message from "./components/Message";
-
-
+import Chat from './components/Chat/Chat';
 
 let socket;
 const CONNECTION_PORT= 'localhost:3002/' //link for the backend
@@ -26,14 +22,6 @@ const connectToRoom = ()=>{
   setLoggedIn(true); // this is the one that makes the code err
   socket.emit('join_room', room);
 };
-<Router>
-    <Routes>
-    <Route  path="/chat"  exact element={<Chat/>}/>
-    <Route  path="/message"  exact element={<App/>}/>
-    <Route  path="/message"  exact element={<Message/>}/>
- </Routes>    
-    </Router>
-
 // sends data to the backend. below here {* render page that will be displayed if not logged in and that is the input */}
 
   return (
