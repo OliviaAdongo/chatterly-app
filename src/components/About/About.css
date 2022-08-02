@@ -1,0 +1,14 @@
+.about{
+display: grid;
+height: 100vh;
+font-Family: monospace;
+color: white;
+background-color: #043a04;
+}
+.about h1{
+    display: flex;
+}
+
+.about u{
+    font-size: 23px;
+}

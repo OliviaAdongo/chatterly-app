@@ -7,8 +7,8 @@ const CONNECTION_PORT= 'localhost:3002/'
 
 function Chat(){
     //Before login
-    const [room, setRoom]=useState('')
-    const [userName, setUserName]=useState('Olivia')
+    const [room, setRoom]=useState('2022')
+    const [userName, setUserName]=useState('User')
 
     // after login
     const [message, setMessage]=useState('');
