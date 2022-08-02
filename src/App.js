@@ -2,6 +2,7 @@ import  React, { useEffect, useState } from "react";
 import './App.css';
 import io from  'socket.io-client';
 import Chat from './components/Chat/Chat';
+import { Link } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 
 
@@ -28,6 +29,17 @@ const connectToRoom = ()=>{
 
   return (
     <div className="App">
+
+    <div className="navBar">
+    <nav>
+        <h4>Navigate:</h4>
+        <li><a><Link to='/about'> About </Link></a></li>
+        <li><a><Link to='/admin'> Admin</Link></a></li>
+        <li><a><Link to='/cat' > Cat </Link></a></li>
+   
+      </nav>
+    </div>
+    
     <h1 style={{fontFamily: "monospace"}}>Chatterly</h1>
     {!loggedIn ? (
        <div className="logIn">

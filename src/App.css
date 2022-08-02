@@ -6,11 +6,43 @@ body{
   display: grid;
   place-items: center;
   height: 100vh;
+  font-family: monospace;
   color: white;
   background-color: #043a04;
 }
 .App  h1{
-  margin-bottom: -100px;
+  margin-bottom: -50px;
+}
+.App  nav {
+  margin-bottom: -50px;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 8%;
+  padding-right: 20px;
+  height: 19px; 
+  font-size: 18px;  
+}
+.App nav  li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px  25px;
+
+}
+.App nav li a:hover{
+  color: orange;
+  transition: .4s;
+}
+.App  nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+
+
 }
 .logIn{
   width: 600px;
