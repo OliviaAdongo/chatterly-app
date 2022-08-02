@@ -2,8 +2,8 @@ import React from 'react'
 
 function ErrorPage() {
   return (
-    <div>Error page not found</div>
+    <div>ErrorPage</div>
   )
 }
 
-export default ErrorPage
+export default ErrorPage;

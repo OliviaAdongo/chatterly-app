@@ -6,4 +6,4 @@ function Cat() {
   )
 }
 
-export default Cat
+export default Cat;

@@ -2,6 +2,8 @@ import  React, { useEffect, useState } from "react";
 import './App.css';
 import io from  'socket.io-client';
 import Chat from './components/Chat/Chat';
+import NavBar from "./components/NavBar/NavBar";
+
 
 let socket;
 const CONNECTION_PORT= 'localhost:3002/' //link for the backend
