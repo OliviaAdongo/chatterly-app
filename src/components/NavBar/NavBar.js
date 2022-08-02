@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Admin from '../pages/Admin/Admin';
 import ErrorPage from '../pages/ErrorPage';
-import Home from '../Home/Home';
 import Cat from '../pages/Cat/Cat';
 import App from '../../App';
+import About from '../About/About';
 
 
 function NavBar() {
@@ -14,7 +14,7 @@ function NavBar() {
     {/* Used instead of switch */}
     <Route path='/' element={<App/>}/>
     {/* main page of the route */}
-    <Route path='/home' element={<Home/>}/>
+    <Route path='/about' element={<About/>}/>
     <Route path='/admin' element={<Admin/>}/>
     <Route path='/cat' element={<Cat/>}/>
     <Route path ='*' element={<ErrorPage/>}/>
